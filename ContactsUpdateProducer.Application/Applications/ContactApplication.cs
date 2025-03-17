@@ -38,7 +38,7 @@ namespace FIAP.TechChallenge.ContactsUpdateProducer.Application.Applications
                 if (contactObject == null)
                 {
                     insertResult.Success = false;
-                    insertResult.Message = $"Contato não encontrado na base para atualização.";
+                    insertResult.Message = $"Contato não encontrado na base para atualizacao.";
                 }
                 else
                 {
@@ -58,12 +58,12 @@ namespace FIAP.TechChallenge.ContactsUpdateProducer.Application.Applications
                         });
 
                         insertResult.Success = true;
-                        insertResult.Message = "Contato inserido na FILA para atualização com sucesso.";
+                        insertResult.Message = "Contato inserido na FILA para atualizacao com sucesso.";
                     }
                     catch (Exception e)
                     {
                         insertResult.Success = false;
-                        insertResult.Message = $"Ocorreu um problema ao tentar inserir o registro na fila para atualização.";
+                        insertResult.Message = $"Ocorreu um problema ao tentar inserir o registro na fila para atualizacao.";
                         _logger.LogError(insertResult.Message, e);
                     }
                 }

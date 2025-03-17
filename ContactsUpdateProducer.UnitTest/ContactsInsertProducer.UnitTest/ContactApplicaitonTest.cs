@@ -115,7 +115,7 @@ namespace FIAP.TechChallenge.ContactsUpdateProducer.UnitTest
             await VerifyTokenAsync(Times.Once());
             await VerifyGetContactByEmailAsync(Times.Once());
             Assert.False(retorno.Success);
-            Assert.Equal("Contato não encontrado na base para atualização.", retorno.Message);
+            Assert.Equal("Contato não encontrado na base para atualizacao.", retorno.Message);
         }
 
         [Fact]
@@ -138,7 +138,7 @@ namespace FIAP.TechChallenge.ContactsUpdateProducer.UnitTest
             await VerifyGetContactByEmailAsync(Times.Once());
             await VerifyBusAsync(Times.Once());
             Assert.False(retorno.Success);
-            Assert.Equal("Ocorreu um problema ao tentar inserir o registro na fila para atualização.", retorno.Message);
+            Assert.Equal("Ocorreu um problema ao tentar inserir o registro na fila para atualizacao.", retorno.Message);
         }
 
         [Fact]
@@ -161,7 +161,7 @@ namespace FIAP.TechChallenge.ContactsUpdateProducer.UnitTest
             await VerifyGetContactByEmailAsync(Times.Once());
             await VerifyBusAsync(Times.Once());
             Assert.True(retorno.Success);
-            Assert.Equal("Contato inserido na FILA para atualização com sucesso.", retorno.Message);
+            Assert.Equal("Contato inserido na FILA para atualizacao com sucesso.", retorno.Message);
         }
 
         private async Task VerifyTokenAsync(Times times)
