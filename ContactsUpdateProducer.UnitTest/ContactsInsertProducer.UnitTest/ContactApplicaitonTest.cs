@@ -115,7 +115,7 @@ namespace FIAP.TechChallenge.ContactsUpdateProducer.UnitTest
             await VerifyTokenAsync(Times.Once());
             await VerifyGetContactByEmailAsync(Times.Once());
             Assert.False(retorno.Success);
-            Assert.Equal("Contato não encontrado na base para atualizacao.", retorno.Message);
+            Assert.Equal("Contato nao encontrado na base para atualizacao.", retorno.Message);
         }
 
         [Fact]

@@ -38,7 +38,7 @@ namespace FIAP.TechChallenge.ContactsUpdateProducer.Application.Applications
                 if (contactObject == null)
                 {
                     insertResult.Success = false;
-                    insertResult.Message = $"Contato não encontrado na base para atualizacao.";
+                    insertResult.Message = $"Contato nao encontrado na base para atualizacao.";
                 }
                 else
                 {
