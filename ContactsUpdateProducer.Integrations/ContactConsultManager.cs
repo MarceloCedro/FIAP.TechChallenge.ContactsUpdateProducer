@@ -17,7 +17,7 @@ namespace FIAP.TechChallenge.ContactsUpdateProducer.Integrations
         {
             try
             {
-                var url = $"{_configuration.GetSection("Integrations:ContactConsult")["BasePath"]}api/Contacts/{id}";
+                var url = $"{_configuration.GetSection("Integrations:ContactConsult")["BasePath"]}api/contacts/{id}";
 
                 HttpClient cliente = new HttpClient();
                 cliente.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
@@ -42,7 +42,7 @@ namespace FIAP.TechChallenge.ContactsUpdateProducer.Integrations
         {
             try
             {
-                var url = _configuration.GetSection("Integrations:ContactConsult")["BasePath"]+"api/Token";
+                var url = _configuration.GetSection("Integrations:ContactConsult")["BasePath"]+"api/token";
                 var body = new CredentialDTO
                 {
                     Username = _configuration.GetSection("Credentials")["Username"],
