@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: contact-update-producer-api-configmap
+data:
+  QueueName: "Contacts.UpdateQueue"
+  Server: "rabbitmq-clusterip"
+  BasePath: "http://kubernetes-api-clusterip/"
