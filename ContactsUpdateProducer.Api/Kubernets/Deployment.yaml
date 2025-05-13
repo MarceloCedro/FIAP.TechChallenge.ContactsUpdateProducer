@@ -47,7 +47,7 @@ spec:
             secretKeyRef:
               name: contact-update-producer-api-secrets
               key: Password
-        - name: MassTransit__QueueName"
+        - name: MassTransit__QueueName
           valueFrom:
             configMapKeyRef: 
               name: "contact-update-producer-api-configmap"
