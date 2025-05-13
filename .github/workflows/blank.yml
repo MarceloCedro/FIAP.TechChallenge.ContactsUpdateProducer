@@ -4,7 +4,7 @@ name: First Workflow GitHub Actions GO
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ main, developer ]
+    branches: [ main, developer, master ]
   pull_request:
     branches: [ main, developer ]
 
