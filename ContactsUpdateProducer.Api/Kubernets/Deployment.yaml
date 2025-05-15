@@ -5,7 +5,7 @@ metadata:
   annotations:
     autor: Rodrigo Mahlow 
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: contact-update-producer-api
